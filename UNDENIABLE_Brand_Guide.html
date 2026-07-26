@@ -25,7 +25,7 @@
   --sec:clamp(56px,6vw,104px);
   --gap:clamp(14px,1.8vw,24px);
   --pad:clamp(16px,1.8vw,24px);
-  --rail:206px; --maxw:1160px;
+  --rail:206px;
   --e:cubic-bezier(.19,1,.22,1);
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -90,7 +90,7 @@ svg{display:block}
 @media(min-width:1080px){.mbar{display:none}}
 
 .main{min-width:0}
-.wrap{max-width:var(--maxw);padding:0 var(--gut)}
+.wrap{width:100%;padding:0 var(--gut)}
 .sec{padding:var(--sec) 0;border-bottom:1px solid var(--line)}
 .s-ink{background:var(--ink);color:#fff;border-bottom-color:var(--linew)}
 .s-carbon{background:var(--carbon);color:#fff;border-bottom-color:var(--linew)}
@@ -143,7 +143,7 @@ svg{display:block}
 .rules li{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);align-items:start}
 .rules li:first-child{border-top:1px solid var(--line)}
 .rules b{font-family:var(--fm);font-size:.6rem;font-weight:500;letter-spacing:.13em;color:var(--field);padding-top:2px}
-.rules span{font-size:.86rem;line-height:1.62;color:var(--g500)}
+.rules span{font-size:.86rem;line-height:1.62;color:var(--g500);max-width:68ch}
 .rules em{font-style:normal;color:var(--ink);font-weight:500}
 .s-ink .rules li,.s-carbon .rules li,.s-field .rules li{border-color:var(--linew)}
 .s-ink .rules b,.s-carbon .rules b,.s-field .rules b{color:var(--mist)}
